@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+/* Navbar starts here */
+
+nav{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 6px darkred;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* margin-right: 10%; */
+    height: 20%;
+    background-color: black;
+    color: white;
+
+}
+
+nav li{
+    height: 50px;
+    /* margin-right: 3.5%; */
+    background-color: black;
+
+
+}
+
+nav h1{
+    height: 50px;
+    padding: 10px 30px;
+}
+
+nav a{
+    height: 100%;
+    padding:0 30px;
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: black;
+
+
+}
+
+nav a:hover{
+    background-color: darkred;
+    /* display: block; */
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+
+}
+
+nav li:first-child{
+    margin-right: auto;
+    font-size: 35px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* Navbar ends here */
+ 
+
+.wrapper{
+    padding: 5px;
+    max-width: 1960px;
+    width: 95%;
+    margin:20px auto;
+}
+
+header {
+    padding: 0 15px;
+    text-align: center;
+    font-size: 21px;
+}
+
+.columns {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0;
+
+
+}
+
+.column {
+    flex:1;
+    border: 1px solid black;
+    margin:12px;
+    padding: 15px;
+    background: thistle;
+    transition: 0.3s;
+    height: 80vh;
+    overflow: auto;
+
+}
+
+.column:first-child{
+    /* margin-left: 0; */
+    background:thistle;
+}
+
+.column:last-child{
+    /* margin-left: 0; */
+    background:thistle;
+}
+
+@media screen and (max-width: 980px) {
+    .columns .column {
+        margin-bottom: 5px;
+        flex-basis:40%;
+    }
+
+    .columns .column:last-child {
+        flex-basis:100%;
+        margin: 0;
+    }
+
+    .columns .column:nth-last-child(2) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .columns .column {
+        flex-basis:100%;
+        margin: 0 0 5px 0;
+    }
+
+    
+}
+
+h2 {
+    margin: 0;
+    font-size: 20px;
+    background-color: white;
+} 
+
+.container{
+    height: 100%;
+}
+
+
+
+
+
+
+
+#sl-info {
+    background-color: #0073e6;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    word-spacing: 3px;
+}
+
+.sl-info-child {
+    background-color: #0091ff;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+
+}
+
+#sl-info2 {
+    background-color: #ff8a00;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.sl-info-child2 {
+    background-color: #ffae42;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.textcolor1{
+    background-color: #0073e6;
+}
+
+.textcolor2{
+  background-color: #ff8a00;
+}
+
+.change{
+    font-size: 11pt;
+    background-color: white;
+    text-align: start;
+    font-weight: 600;
+}
+
+.change2{
+    font-size: 9pt;
+    background-color: white;
+    text-align: start;
+    font-weight: 700;
+}
+
+ .move{
+     text-align: start;
+     margin-bottom: 15%;
+ }
+
+ .move2{
+    text-align: start;
+   
+}
+
+.space{
+  word-spacing: 5px;
+}
+
+.card{
+  margin-bottom: 13%;
+}
+
+
+.bi-train-front-fill {
+  color:black;
+  background-color: #ffae42;
+}
+
+.bi-bus-front-fill{
+  color:black;
+  background-color: #0091ff;
+}
+
+
+#Tablegap > tr > td {
+    height:150px;
+}
+
+.changetable{
+    max-width: 50%;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href="../css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="../javascript/slapi.js" defer></script>
+    <script src="../javascript/weatherapi.js" defer></script>
+    <script src = "../javascript/books.js" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/6e810b3bee.js" crossorigin="anonymous"></script>
+
+                
+    <title>Document</title>
+</head>
+<body>
+
+  <nav>
+    <ul>
+        <li>API&MORE</li>
+        <li><a href="../index.html">Home</a>
+        </li>
+        <li><a href="../html/page1.html">Page 1</a></li>
+
+        <li><a href="../html/page2.html">Page 2</a></li>
+        
+</nav>
+
+
+    <div class ="wrapper">
+
+        <section class = "columns">
+            <div class = "column">
+                
+              <div id="sl-info">
+                    <h4 class = "textcolor1"></h4>
+                    <div id="sl-info-child"></div>
+                </div> 
+                
+                <div id="sl-info2">
+                    <h4 class = "textcolor2"></h4>
+                    <div id="sl-info-child2"></div>
+                </div> 
+
+                <!-- Här är en annan struktur på hur jag byggde sl buss och tåg med bootstrap tables. Du behöver ta bort comment för funktioenen i javascript -->
+                <!-- <div class="container-sm">100% wide until small breakpoint
+
+                 <div class="container"> -->
+                    <!-- <h1>SL Trafikinformation</h1> -->
+                    
+                    <!-- Bussar -->
+                    <!-- <h2>Bussar</h2>
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Linje</th>
+                                <th>Destination</th>
+                                <th>Avgångstid</th>
+                                <th>Läge</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bus-info"></tbody>
+                    </table> -->
+            
+                    <!-- Tåg -->
+                    <!-- <h2>Tåg</h2>
+                    <table class="table table-bordered table-striped" style="background-color: #ff8a00; color: white;">
+                        <thead>
+                            <tr>
+                                <th>Linje</th>
+                                <th>Destination</th>
+                                <th>Avgångstid</th>
+                                <th>Läge</th>
+                            </tr>
+                        </thead>
+                        <tbody id="train-info" style="background-color: #ffae42; color: white;"></tbody>
+                    </table>
+                </div> -->
+              
+        </div>
+
+            <div class = "column">
+
+                <div class="card text-center">
+                    <div class="card-header">
+                      <h1>Current Weather</h1>
+                    </div>
+                    <div class="card-body" id="weatherBody">
+                         
+                    </div>
+                </div>
+
+                <div class="card text-center">
+                    <div class="card-header">
+                      <h1>Weather Of The Week</h1>
+                    </div>
+                    <div class="card-body">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                           <th scope="col">Day</th>
+                           <th scope="col">Temp</th>
+                           <th scope="col">Feels like</th>
+                           <th scope="col">Weather</th>
+                          </tr>
+                        </thead>
+                        <tbody id="weatherBody2">
+                          <tr>
+                          </tr>        
+                        </tbody>
+                      </table>
+                    </div>
+                </div>
+
+                </div>
+
+                <div class = "column">
+                  <div class="card text-center">
+                    <div class="card-body">
+                        <table class = "table">
+                          <thead>
+                            <h1>Top Best Selling Books</h1>
+                            <tr>
+                              <th scope="col">Rank</th>
+                              <th scope="col">Title</th>
+                              <th scope="col">Publisher</th>
+                           </tr>
+                          </thead>
+                          <tbody id="bookBody" >
+                            <!-- The API will fetch the information and put it will here -->
+                           <tr> </tr>        
+                          </tbody>
+                        </table> 
+                    </div> 
+                </div>
+
+                
+            
+              </div>
+        </section>
+    </div>
+
+</body>
+</html>
