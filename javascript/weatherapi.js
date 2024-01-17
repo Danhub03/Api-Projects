@@ -1,10 +1,8 @@
-// Dagens väder prognos
+// Today's weather forecast
 const getWeather = () => {
     fetch('https://api.openweathermap.org/data/2.5/weather?lat=59.3613&lon=17.9711&appid=846eafb6759b6afae2d952175294a7bf&units=metric')
     .then( res => res.json())
     .then( res => bruh(res))
-    
-
     
 }
 
@@ -19,8 +17,6 @@ const bruh = (res) => {
     <p class = change>/ Feels like ${feels_like}&deg;</p> 
     <p class = change2> Speed: ${res.wind.speed}m/s W</p> 
     <p class = change2> Humidity: ${res.main.humidity}%</p> 
-    
-    
     `;
 };
 
@@ -33,14 +29,14 @@ const getWeatherweek = () => {
 }
 
 const weekData = (week) => {
-    // Skapa ett objekt för att hålla spår på de unika dagarna
+    // Create an object to keep track of the unique days
     const uniqueDays = {};
 
     week.list.forEach(element => {
-        // Konvertera timestamp till en datumsträng (sv-SE om du vill att dagarna är på svenska istället
+        // Convert timestamp to a date string (sv-SE if you want the days to be in Swedish instead)
         const date = new Date(element.dt_txt).toLocaleDateString('en-US', { weekday: 'long' });
 
-        // Om datumet inte finns i uniqueDays-objektet, lägg till det och visa informationen
+        // If the date is not in the uniqueDays object, add it and display the information
         if (!uniqueDays[date]) {
             uniqueDays[date] = true;
             document.getElementById('weatherBody2').innerHTML += 
