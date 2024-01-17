@@ -1,8 +1,4 @@
-// fetch('https://api.sl.se/api2/realtimedeparturesV4.json?key=f7c188a0820b41f1ada4164057d66e33&siteid=7000&timewindow=30')
-// .then(res => res.json())
-// .then(res => console.log(res))
-
-// BUSSAR 
+// Buses 
 fetch('https://api.sl.se/api2/realtimedeparturesV4.json?key=f7c188a0820b41f1ada4164057d66e33&siteid=7000&timewindow=30')
 .then(res => res.json())
 .then(res => res.ResponseData.Buses.forEach((data) => {
@@ -20,7 +16,7 @@ const busesData = (data) => {
     slElm.innerHTML += busesInfo
 };
 
-// TÅG
+// Trains
 fetch('https://api.sl.se/api2/realtimedeparturesV4.json?key=f7c188a0820b41f1ada4164057d66e33&siteid=7006&timewindow=30')
 .then(res => res.json())
 .then(res => res.ResponseData.Trains.forEach((data) => {
@@ -37,51 +33,3 @@ const trainData = (data) => {
     `
     slElm.innerHTML += trainInfo
 };
-
-// Sl info with bootstrap tables
-
-// // Funktion för att fylla i bussinformation
-// function fillBusTable(data) {
-//     const busInfoContainer = document.getElementById('bus-info');
-//     const busesInfo = `
-//         <tr>
-//             <td>${data.LineNumber}</td>
-//             <td>${data.Destination}</td>
-//             <td>${data.DisplayTime}</td>
-//             <td>${data.StopPointDesignation}</td>
-//         </tr>
-//     `;
-//     busInfoContainer.innerHTML += busesInfo;
-// }
-
-// // Funktion för att fylla i tåginformation
-// function fillTrainTable(data) {
-//     const trainInfoContainer = document.getElementById('train-info');
-//     const trainInfo = `
-//         <tr>
-//             <td>${data.LineNumber}</td>
-//             <td>${data.Destination}</td>
-//             <td>${data.DisplayTime}</td>
-//             <td>${data.StopPointDesignation}</td>
-//         </tr>
-//     `;
-//     trainInfoContainer.innerHTML += trainInfo;
-// }
-
-// // Bussar
-// fetch('https://api.sl.se/api2/realtimedeparturesV4.json?key=f7c188a0820b41f1ada4164057d66e33&siteid=7000&timewindow=30')
-// .then(res => res.json())
-// .then(res => res.ResponseData.Buses.forEach((data) => {
-//     fillBusTable(data);
-// }));
-
-// // Tåg
-// fetch('https://api.sl.se/api2/realtimedeparturesV4.json?key=f7c188a0820b41f1ada4164057d66e33&siteid=7006&timewindow=30')
-// .then(res => res.json())
-// .then(res => res.ResponseData.Trains.forEach((data) => {
-//     fillTrainTable(data);
-// }));
-
-
-
-
