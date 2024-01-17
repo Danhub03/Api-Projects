@@ -1,7 +1,3 @@
-// fetch('https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=eY6SlcJtIlFKDK8GBfEMz51NAitaZRWm')
-// .then(res => res.json())
-// .then(res => console.log(res))
-
 const bookList = () => {
    fetch('https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=eY6SlcJtIlFKDK8GBfEMz51NAitaZRWm')
    .then(res => res.json())
